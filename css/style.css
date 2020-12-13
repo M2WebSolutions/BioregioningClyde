@@ -183,7 +183,7 @@
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #000000;
+    background:rgb(130, 197, 53);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
@@ -191,7 +191,7 @@
   .nav-links .nav-link a:hover:after { 
     width: 100%; 
     left: 0; 
-    background: black;
+    background: rgb(130, 197, 53);
   }
   
   @media screen and (max-width: 1450px) {
@@ -218,10 +218,12 @@
     }
 /* ===== CONTROLS NAVBAR UNDERLINES =========*/
     .nav-links .nav-link a:hover:after { 
-      background: #272727;
+      background: rgb(130, 197, 53);
+      left: 25%;
+      width: 50%;
     }
     .nav-links .nav-link a:after {    
-    background: #272727;
+    background: rgb(130, 197, 53);
      }
 /* ======================================== */
     .main-header .nav-links {
@@ -440,7 +442,8 @@
 
   .carousel .title h1 {
     text-align: center;
-    font-size: calc(4vw + 4vh + 2vmin);
+    font-size: calc(3vw + 3vh + 1.5vmin);
+    text-shadow: 4px 4px 10px #1a1a1a;
   }
 
   .carousel .title h1 span {
