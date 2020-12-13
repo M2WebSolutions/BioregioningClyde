@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bioregioning Clyde</title>
+    <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/glide.core.min.css">
     <link rel="stylesheet" href="/css/glide.theme.min.css">
@@ -50,25 +53,24 @@
 <!-- CAROUSEL -->
 <div class="carousel">
     <div class = "title">
-        <h1>Bioregioning Clyde</h1>
-        <h3>Officially Most Gallus Bioregion On Planet Earth</h3>
+        <h1>Bioregioning Clyde<br><span>Officially Most Gallus Bioregion On Planet Earth</span></h1>
     </div>
     <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide"><img src="/imgs/P7250193.JPG" alt=""></li>
-            <li class="glide__slide"><img src="/imgs/Clyde Tributary 1.jpeg" alt=""></li>
+            <li class="glide__slide"><img src="/imgs/Clyde Tributary 1.jpg" alt=""></li>
             <li class="glide__slide"><img src="/imgs/Clyde Estuary.JPG" alt=""></li>
             <li class="glide__slide"><img src="/imgs/Mausoleum.JPG" alt=""></li>
           </ul>
         </div>
      
-        <div class="glide__arrows" data-glide-el="controls">
+        <div class="glide__arrows" id="arrows" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
             <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
           </div>
 
-          <div class="glide__bullets" data-glide-el="controls[nav]">
+          <div class="glide__bullets" id="dots" data-glide-el="controls[nav]">
             <button class="glide__bullet" data-glide-dir="=0"></button>
             <button class="glide__bullet" data-glide-dir="=1"></button>
             <button class="glide__bullet" data-glide-dir="=2"></button>
@@ -80,7 +82,7 @@
 <!-- CAROUSEL ENDS -->
 
 <!-- QUOTE -->
-<div class = "quote">
+<div class = "quote vignette">
     <h2>
         Bioregioning is taking the time 
 to understand
@@ -92,6 +94,14 @@ who live in the places we live.
     </h2>
 
     <h4>With some of the most striking landscapes in Scotland, and its most Gallus City, the Clyde Bioregion, is like nowhere else in the world.</h4>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="btn">
+        <a href="/about.html" class="underline">Find Out More <i class="fas fa-arrow-right"></i></a>
+    </div>
 
 </div>
 <!-- QUOTE ENDS -->
@@ -156,13 +166,10 @@ to explore ways of thinking and mobilising to facilitate solution
 </div>
 <!-- MAIN INFO ENDS -->
 
-
-
-
-
-
 <!-- FOOTER -->
 
+
+<!-- FOOTER ENDS -->
 
 <footer class = "grid3">
 <div>
@@ -223,7 +230,6 @@ to explore ways of thinking and mobilising to facilitate solution
 // OPTIONS GO HERE
     type: 'carousel',
     autoplay: 5000,
-    gap: 0,
 
   }).mount()
 </script>
