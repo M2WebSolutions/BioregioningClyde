@@ -423,7 +423,7 @@
   .carousel img{
     width: 100%;
     object-fit: cover;
-    height: 75vh; 
+    height: 85vh; 
     position: relative;
     filter: brightness(75%);
     margin-bottom: -2.5rem;
@@ -445,7 +445,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 75%;
+    height: 85%;
     z-index: 1;
     position: absolute;
     margin: auto;
@@ -473,7 +473,7 @@
     font-size: calc(1vw + 1vh + .5vmin);
   }
   
-  @media(max-width: 480px){
+  @media(max-width: 1020px){
     .glide__arrows{
       display: none;
     }
@@ -494,7 +494,7 @@
 
   .quote{
     text-align: center;
-    padding: 20rem 10rem;
+    padding: 20rem 10rem 10rem;
     background-color: #3a6d8c;
     background-color: #3a6d8c;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='355' height='42.6' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23b3e0f2' stroke-width='5.9' stroke-opacity='0.16'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
@@ -511,7 +511,7 @@
 
   @media(max-width: 1024px){
     .quote{
-      padding: 25rem 1rem;
+      padding: 25rem 1rem 10rem;
     }
     .main-header .logo img {
       max-width: 50vw;
@@ -528,7 +528,7 @@
   }
   @media(max-width: 480px){
     .quote{
-      padding: 20rem 1rem;
+      padding: 20rem 1rem 5rem;
     }
   }
   /* Main Info */
@@ -557,6 +557,7 @@
     background-image: url(/imgs/20151207_132319.jpg) ;
   }
 
+  
   .container h4 {
     font-family: 'Oxygen', sans-serif;
     font-size: 1.5rem;
@@ -568,6 +569,21 @@
     font-size: 1.2rem;
     padding-left:5rem;
     padding-right: 5rem;
+  }
+
+  @media(max-width:420px){
+    .container h4 {
+      font-family: 'Oxygen', sans-serif;
+      font-size: 1.5rem;
+      padding-left:0;
+      padding-right: 0;
+    }
+  
+    .container p {
+      font-size: 1.2rem;
+      padding-left:0;
+      padding-right: 0;
+    }
   }
 
   .container_first_half{
