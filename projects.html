@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bioregioning Clyde | Projects</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/projectstyles.css">
 </head>
 <body>
 
@@ -12,7 +12,10 @@
 
     <header class="main-header">
         <div class="logo">   
-            <a href="index.html">Bioregionning Clyde</a>
+            <a href="index.html">
+                <img src="/imgs/Clyde Bio Logo Full Colour.png" alt="Bioregioning Clyde"
+                  onclick="document.location.href = '/index.html';" />
+              </a>
         </div>
 
         <input type="checkbox" class="menu-btn" id="menu-btn">
@@ -43,6 +46,156 @@
     </header>
 
     <h1>Projects</h1>
-<script src="/app.js"></script>
+  
+        <div class="app">
+          <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="#arrow-left"></use>
+                </svg>
+              </div>
+            </button>
+        
+            <div class="cards__wrapper">
+              <div class="card current--card">
+                <div class="card__image">
+                  <img src="/imgs/Mausoleum.jpg" alt="" />
+                </div>
+              </div>
+        
+              <div class="card next--card">
+                <div class="card__image">
+                  <img src="/imgs/IMG_20171229_121507-01.jpg" alt="" />
+                </div>
+              </div>
+        
+              <div class="card previous--card">
+                <div class="card__image">
+                  <img src="/imgs/Clyde Estuary.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+        
+            <button class="cardList__btn btn btn--right">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+        
+          <div class="infoList">
+            <div class="info__wrapper">
+              <div class="info current--info">
+                <h1 class="text name">Atlas of the Clyde<br>Bioregion</h1>
+                <p class="text description">Documenting the best of the Clyde Bioregion, it will also help identify the challenges<br>we face and opportunities for solutions together.  If you want to contribute to the Atlas, please contact us.</p>
+              </div>
+        
+              <div class="info next--info">
+                <h1 class="text name">Clyde Bioregion<br>Learning Journey</h1>
+                <p class="text description">Delivering Learning Journeys through the Clyde Bioregion, with the first in 2021.<br>Meet inspiring individuals and initiatives, it will support deeper exploration of the places, systems, challenges<br>and opportunities.  Please contact us if you would like to join the journey.</p>
+              </div>
+        
+              <div class="info previous--info">
+                <h1 class="text name">Bioregioning Clyde<br>Basecamps </h1>
+                <p class="text description">Designing workshops for different parts of the Bioregion it will open up a space for discussion,<br>inspiration and imagination about Clyde Bioregioning and future projects. Please contact us if you<br>would like to host or take part in a Bioregioning Clyde Basecamp.</p>
+              </div>
+            </div>
+          </div>
+        
+        
+          <div class="app__bg">
+            <div class="app__bg__image current--image">
+              <img src="/imgs/Mausoleum.jpg" alt="" />
+            </div>
+            <div class="app__bg__image next--image">
+              <img src="/imgs/IMG_20171229_121507-01.jpg" alt="" />
+            </div>
+            <div class="app__bg__image previous--image">
+              <img src="/imgs/Clyde Estuary.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+<!--         
+        <div class="loading__wrapper">
+          <div class="loader--text">Loading...</div>
+          <div class="loader">
+            <span></span>
+          </div>
+        </div> -->
+        
+        
+        <svg class="icons" style="display: none;">
+          <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='328 112 184 256 328 400'
+                   style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+          </symbol>
+          <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='184 112 328 256 184 400'
+                   style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+          </symbol>
+        </svg>
+
+        <!-- FOOTER -->
+
+
+<!-- FOOTER ENDS -->
+
+<footer class = "grid3">
+    <div>
+        <h2>BIOREGIONING CLYDE</h2>
+        <p>Bioregioning is taking the time 
+            to understand
+             why the world is the way it is today, & to care for all those
+             who live in the places we live.
+            With some of the most striking landscapes in Scotland, and its most Gallus City, the Clyde Bioregion, is like nowhere else in the world.</p>
+    </div>
+    <div>
+        <h2>Sitemap</h2>
+        <ul>
+            <li>> About</li>
+            <li>> Vision & Mission</li>
+            <li>> What is Bioregion?</li>
+            <li>> What is Bioregioning?</li>
+            <li>> Contact</li>
+            <li>> Projects</li>
+            <li>> Get Inspired</li>
+            <li>> Global Bioregioning</li>
+            <li>> Clyde Bioregioning</li>
+            <li>> Get Involved</li>
+            <li>> News & Events</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Subscribe</h2>
+        <p>Get to know all about Bioregioning Clyde by getting all of our updates and news sent straight to your inbox in our newsletter.</p>
+        <h3>FORM GOES HERE</h3>
+    
+        <h2>Get In Touch</h2>
+        <p>Contact us to get involved in the Bioregioning Clyde projects 
+            or 
+            if you have ideas for new ones, we would love to hear from you
+            .
+        </p>
+        <a href="#">CONTACT US</a>
+    </div>
+    </footer>
+    
+    <!-- Below Footer -->
+    <div class = "important_info">
+    <a href="#">PRIVACY POLICY</a>
+    <a href="#">TERMS & CONDITIONS</a>
+    <a>Bioregioning Clyde © 2020</a>
+    <br>
+    <a href="#">Developed By M2 Web Solutions</a>
+    </div>
+        
+        <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        </body>
+<script src="/js/projectscripts.js"></script>
 </body>
 </html>
