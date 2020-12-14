@@ -646,6 +646,11 @@ footer{
 .info .description{
 font-size: 18px;
 white-space: normal;
+width: 100%;
+}
+
+.infoList {
+  margin-top: 20rem;
 }
 }
 
