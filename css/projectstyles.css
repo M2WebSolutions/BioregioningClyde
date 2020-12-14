@@ -648,7 +648,7 @@ footer{
   width: 100%;
   }
 
-  @media(min-width:1500px){
+  @media(min-width:1700px){
     .info .description{
       font-size: 1.5rem;
   }
