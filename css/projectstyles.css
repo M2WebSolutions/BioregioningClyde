@@ -534,10 +534,10 @@ footer{
    z-index: 100;
 }
  .cardList__btn.btn--left {
-   left: -20%;
+   left: -15%;
 }
  .cardList__btn.btn--right {
-   right: -20%;
+   right: -15%;
 }
  .cardList__btn .icon {
    width: 100%;
@@ -644,14 +644,14 @@ footer{
 }
 
 .info .description{
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   white-space: nowrap;
   width: 100%;
   }
 
   @media(min-width:1700px){
     .info .description{
-      font-size: 1.5rem;
+      font-size: 1.2rem;
   }
 }
 @media(max-width:1024px){  
@@ -661,17 +661,28 @@ footer{
 .info .description{
 font-size: 25px;
 white-space: normal;
-width: 100%;
+
 }
 }
   
-@media(max-width:480px){
-.info .description{
-font-size: 18px;
-white-space: normal;
-width: 100%;
-}
+@media(max-width:780px){
+  .info .description{
+  font-size: 18px;
+  white-space: normal;
+  width: 100%;
+  }
 
+  .info {
+    margin-bottom: 0;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  .cardList__btn.btn--left {
+    left: -5%;
+  }
+  .cardList__btn.btn--right {
+    right: -5%;
+  }
 }
 
 
