@@ -534,10 +534,10 @@ footer{
    z-index: 100;
 }
  .cardList__btn.btn--left {
-   left: -5%;
+   left: -10%;
 }
  .cardList__btn.btn--right {
-   right: -5%;
+   right: -10%;
 }
  .cardList__btn .icon {
    width: 100%;
