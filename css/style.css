@@ -424,7 +424,7 @@
     object-fit: cover;
     height: 80vh; 
     position: relative;
-    filter: brightness(50%);
+    filter: brightness(75%);
     margin-bottom: -2.5rem;
     
   }
@@ -646,7 +646,7 @@
   /* Footer */
 
 footer{
-  background: #171717;
+  background: #1f426b;
   color: white;
   padding: 5rem !important;
   text-align: left !important;
@@ -672,6 +672,7 @@ footer li{
   flex-direction: row;
   justify-content: space-around;
   height: 2rem;
+  background: #98a62e;
 }
 
 .important_info a{
