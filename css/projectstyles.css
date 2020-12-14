@@ -644,7 +644,7 @@ footer{
 
 @media(max-width:480px){
 .info .description{
-font-size: 10px;
+font-size: 18px;
 white-space: normal;
 }
 }
