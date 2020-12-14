@@ -642,6 +642,12 @@ footer{
    width: fit-content;
 }
 
+.info .description{
+  font-size: 1.5rem;
+  white-space: normal;
+  width: 100%;
+  }
+
 @media(max-width:480px){
 .info .description{
 font-size: 18px;
