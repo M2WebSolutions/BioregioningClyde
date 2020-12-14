@@ -241,7 +241,7 @@ const waitForImages = () => {
 				if (totalImages == loadedImages) {
 					gsap.timeline()
 						.to(".loading__wrapper", {
-						duration: 0.8,
+						duration: 0,
 						opacity: 0,
 						pointerEvents: "none",
 					})
