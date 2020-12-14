@@ -695,3 +695,95 @@ font-size: 1rem;
 padding: 0.5rem;
 }
 }
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++ ABOUT PAGE ++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.about_header img{
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  object-fit: cover;
+  filter: brightness(25%);
+  }
+  
+  .about_header h1{
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;  
+    top: 25%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  /* Main Content */
+  
+  .about_main_content{
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .about_container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin: auto;
+    }
+  
+    @media (max-width: 1024px) {
+      .about_container {
+        flex-direction: column;
+      }
+      .container_half_standard{
+        width: 90% !important;
+      }
+    }
+    .container_half_standard{
+      width: 50%;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      margin: 3rem;
+      height: 35rem;
+      border: 1px solid black
+    }
+  
+    .VM_img{
+      width: 100%;
+      height: 25rem;
+      object-fit: cover;
+    }
+  
+    .info{
+      margin-top: 10rem;
+      text-align: center;
+      word-spacing: 3px;
+      padding: 2rem;
+    }
+  
+    .contact_us_link{
+      text-align: center;
+      margin: 5rem;
+    }
+  
+    .contact_us_link h3{
+      margin-bottom: 3rem;
+    }
+  
+    .contact_us_link a{
+      background: lightblue;
+      padding: 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+    }
