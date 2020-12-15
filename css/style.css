@@ -30,7 +30,9 @@
     width: 100%;
     overflow-x: hidden;
   }
-
+.visible{
+  display: none !important;
+}
   /* CONTAINTERS */
 
 

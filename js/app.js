@@ -1,6 +1,8 @@
   
-const toggleButton = document.getElementsByClassName("toggle-button")[0];
-const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+// const toggleButton = document.getElementsByClassName("toggle-button")[0];
+// const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+
 
 const header = document.querySelector('.main-header');
 
