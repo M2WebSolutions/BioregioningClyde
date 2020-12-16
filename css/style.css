@@ -41,7 +41,14 @@
 
 .current_page{
   color: rgb(130, 197, 53);;
+  font-size: 1rem;
+  margin: .2rem;
+  padding: 0 1.5rem;
+  font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  position: relative;
 }
 
 /* .nav-links .nav-link a:hover:after { 
