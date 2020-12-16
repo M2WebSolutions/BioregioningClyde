@@ -70,6 +70,12 @@
       position: relative;
     }
 
+    @media(max-width:1024px){
+      .current_page{
+        padding:2rem 1.5rem;
+      }
+    }
+
   /*============== 3 COLUMN GRID ================*/
 .grid3{
     display: grid;
