@@ -56,6 +56,13 @@
     overflow-x: hidden;
   }
 
+    /* DYNAMIC CLASSES */
+
+.current_page{
+  color: rgb(130, 197, 53);;
+  text-transform: uppercase;
+}
+
   /*============== 3 COLUMN GRID ================*/
 .grid3{
     display: grid;

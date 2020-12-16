@@ -31,6 +31,13 @@
     overflow-x: hidden;
   }
 
+      /* DYNAMIC CLASSES */
+
+.current_page{
+  color: rgb(130, 197, 53);;
+  text-transform: uppercase;
+}
+
   /* CONTAINTERS */
 
 

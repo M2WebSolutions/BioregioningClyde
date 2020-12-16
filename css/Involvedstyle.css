@@ -30,7 +30,12 @@
     width: 100%;
     overflow-x: hidden;
   }
+    /* DYNAMIC CLASSES */
 
+    .current_page{
+      color: rgb(130, 197, 53);;
+      text-transform: uppercase;
+    }
   /* CONTAINTERS */
 
 
@@ -428,6 +433,14 @@
   }
 
 /* CONTAINTERS */
+
+.main_info_quote{
+ text-align:center;
+}
+
+.main_info_quote h2{
+  padding: 5rem 2.5rem;
+}
   
 .main_info .container{
   height: 30rem;

@@ -30,9 +30,30 @@
     width: 100%;
     overflow-x: hidden;
   }
+
+  /* DYNAMIC CLASSES */
+
+  /* This adds and removes the buttons and bullets for 
+  the carousel on nav open */
 .visible{
   display: none !important;
 }
+
+.current_page{
+  color: rgb(130, 197, 53);;
+  text-transform: uppercase;
+}
+
+/* .nav-links .nav-link a:hover:after { 
+  background: yellow !important;
+  left: 25%;
+  width: 50%;
+} */
+/* This displays what pages you are on via the nav */
+
+
+
+
   /* CONTAINTERS */
 
 
