@@ -823,9 +823,20 @@ padding: 0.5rem;
     }
   
     .contact_us_link a{
-      background: lightblue;
+      background: #1f426b;
       padding: 1rem;
       border-radius: 5px;
       text-decoration: none;
       color: white;
+      transition: 0.5s;
     }
+
+    .contact_us_link a:hover{
+      background: lightblue;
+      padding: 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      color: grey;
+      transition: 0.5s;
+    }
+    
