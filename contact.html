@@ -1,130 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bioregioning Clyde | Contact</title>
-    <link rel="stylesheet" href="/css/contactstyle.css">
-</head>
-<body>
-
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="/css/contactstyle.css" />
+  </head>
+  <body>
     <!-- NavBar -->
 
     <header class="main-header">
-        <div class="logo">   
-            <a href="index.html">Bioregionning Clyde</a>
-        </div>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="/imgs/Clyde Bio Logo Full Colour.png"
+            alt="Bioregioning Clyde"
+            onclick="document.location.href = '/index.html';"
+          />
+        </a>
+      </div>
 
-        <input type="checkbox" class="menu-btn" id="menu-btn">
-        <label for="menu-btn" class="menu-icon">
-            <span class="menu-icon__line"></span>
-        </label>
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="menu-icon__line"></span>
+      </label>
 
-        <ul class="nav-links">
-            <li class="nav-link">
-                <a href="/about.html">About</a>
-            </li>
-            <li class="nav-link">
-                <a href="/projects.html">Projects</a>
-            </li>
-            <li class="nav-link">
-                <a href="/inspired.html">Get Inspired</a>
-            </li>
-            <li class="nav-link">
-                <a href="/involved.html">Get Involved</a>
-            </li>
-            <!-- <li class="nav-link">
+      <ul class="nav-links">
+        <li class="nav-link homeLink">
+          <a href="/index.html">Home</a>
+        </li>
+        <li class="nav-link">
+          <a href="/about.html">About</a>
+        </li>
+        <li class="nav-link">
+          <a href="/projects.html">Projects</a>
+        </li>
+        <li class="nav-link">
+          <a href="/inspired.html">Get Inspired</a>
+        </li>
+        <li class="nav-link">
+          <a href="/involved.html">Get Involved</a>
+        </li>
+        <!-- <li class="nav-link">
                 <a href="/news.html">News & Events</a>
             </li> -->
-            <li class="nav-link">
-                <p class = "current_page" href="/about.html">Contact</p>
-            </li>
-        </ul>
+        <li class="nav-link">
+          <p class="current_page" href="/about.html">Contact</p>
+        </li>
+      </ul>
     </header>
 
+    <!-- Main Body -->
+    <div class="contact-container">
+      <div class="contact-form-container">
+          <br>
+          <h1>Contact Us</h1>
+          <h3 class="center">Please contact Bioregioing Clyde if you want to learn more about the Clyde Bioregion, if you have ideas for projects or would like to get involved please drop us a line.</h3>
+        <form class="contact_form" action="#">
+          <div class="form_group">
+            <label class="form_label" for="Name">Enter your name</label>
+            <input class="form_input" type="text" required id="Name" />
+          </div>
+          <div class="form_group">
+            <input class="form_input" type="email" id="email" required />
+            <label class="form_label" for="email">Enter your email</label>
+          </div>
+          <div class="form_group">
+            <input class="form_input" type="text" id="Phone" />
+            <label class="form_label" for="Phone"
+              >Enter your phone number</label
+            >
+          </div>
+          <div class="form_group">
+            <textarea
+              class="form_input textarea"
+              name="message"
+              id="Message"
+              required
+            ></textarea>
+            <label class="form_label" for="Message">Enter a message</label>
+          </div>
+          <input class="button_submit" type="submit" value="Submit" />
+        </form>
+        <div class="wrapper">
+            <div class="button">
+              <div class="icon">
+      <i class="fab fa-facebook-f"></i></div>
+      <span>Facebook</span>
+            </div>
+      <div class="button">
+              <div class="icon">
+      <i class="fab fa-twitter"></i></div>
+      <span>Twitter</span>
+            </div>
+      <div class="button">
+              <div class="icon">
+      <i class="fab fa-instagram"></i></div>
+      <span>Instagram</span>
+            </div>
+      <div class="button">
+              <div class="icon">
+      <i class="fab fa-youtube"></i></div>
+      <span>YouTube</span>
+            </div>
+      </div>
+        <br>
+        <h2 class="center">Or alternatively send us an email: <a href="mailto:bioregioningclyde@gmail.com">bioregioningclyde@gmail.com</a></h2>
+            <br>
+      </div>
+    </div>
+
     <!-- Main Content Header-->
-    <div class="contact_header">
-        <img src="/imgs/IMG_20171229_121507-01.jpg" alt="Background for header ">
-        <h1>About Bioregioning Clyde</h1>
+    <!-- <div class="contact_header">
+      <img
+        src="/imgs/IMG_20171229_121507-01.jpg"
+        alt="Background for header "
+      />
+      <h1>About Bioregioning Clyde</h1>
     </div>
 
     <div class="contact_main">
-
-        <form class="contact_form" action="#">
-            <div class="form_group">
-                <input class="form_input" type="text" required id ="Name">
-                <label class="form_label" for="Name">Enter your name</label>
-            </div>
-            <div class="form_group">
-                <input class="form_input" type="email" id ="email" required>
-                <label class="form_label" for="email">Enter your email</label>
-            </div>
-            <div class="form_group">
-                <input class="form_input" type="text" id ="Phone">
-                <label class="form_label" for="Phone">Enter your phone number</label>
-            </div>
-            <div class="form_group">
-                <textarea class="form_input" name="message" id ="Message" required></textarea>
-                <label class="form_label" for="Message">Enter a message</label>
-            </div>
-            <input class="button_submit" type="submit" value="Submit">
-        </form>
+      <form class="contact_form" action="#">
+        <div class="form_group">
+          <input class="form_input" type="text" required id="Name" />
+          <label class="form_label" for="Name">Enter your name</label>
+        </div>
+        <div class="form_group">
+          <input class="form_input" type="email" id="email" required />
+          <label class="form_label" for="email">Enter your email</label>
+        </div>
+        <div class="form_group">
+          <input class="form_input" type="text" id="Phone" />
+          <label class="form_label" for="Phone">Enter your phone number</label>
+        </div>
+        <div class="form_group">
+          <textarea
+            class="form_input"
+            name="message"
+            id="Message"
+            required
+          ></textarea>
+          <label class="form_label" for="Message">Enter a message</label>
+        </div>
+        <input class="button_submit" type="submit" value="Submit" />
+      </form>
     </div>
 
     <div class="additional_info">
-        <h2>Or alternatively send us an email:</h2>
-        <h3>bioregioningclyde@gmail.com</h3>
-    </div>
+      <h2>Or alternatively send us an email:</h2>
+      <h3>bioregioningclyde@gmail.com</h3>
+    </div> -->
 
-    
     <!-- FOOTER -->
-<footer class = "grid3">
-    <div>
+    <footer class="grid3">
+      <div>
         <h2>BIOREGIONING CLYDE</h2>
-        <p>Bioregioning is taking the time 
-            to understand
-             why the world is the way it is today, & to care for all those
-             who live in the places we live.
-            With some of the most striking landscapes in Scotland, and its most Gallus City, the Clyde Bioregion, is like nowhere else in the world.</p>
-    </div>
-    <div>
+        <p>
+          Bioregioning is taking the time to understand why the world is the way
+          it is today, & to care for all those who live in the places we live.
+          With some of the most striking landscapes in Scotland, and its most
+          Gallus City, the Clyde Bioregion, is like nowhere else in the world.
+        </p>
+      </div>
+      <div>
         <h2>Sitemap</h2>
         <ul>
-            <li>> About</li>
-            <li>> Vision & Mission</li>
-            <li>> What is Bioregion?</li>
-            <li>> What is Bioregioning?</li>
-            <li>> Contact</li>
-            <li>> Projects</li>
-            <li>> Get Inspired</li>
-            <li>> Global Bioregioning</li>
-            <li>> Clyde Bioregioning</li>
-            <li>> Get Involved</li>
-            <li>> News & Events</li>
+          <li>> About</li>
+          <li>> Vision & Mission</li>
+          <li>> What is Bioregion?</li>
+          <li>> What is Bioregioning?</li>
+          <li>> Contact</li>
+          <li>> Projects</li>
+          <li>> Get Inspired</li>
+          <li>> Global Bioregioning</li>
+          <li>> Clyde Bioregioning</li>
+          <li>> Get Involved</li>
+          <li>> News & Events</li>
         </ul>
-    </div>
-    <div>
+      </div>
+      <div>
         <h2>Subscribe</h2>
-        <p>Get to know all about Bioregioning Clyde by getting all of our updates and news sent straight to your inbox in our newsletter.</p>
+        <p>
+          Get to know all about Bioregioning Clyde by getting all of our updates
+          and news sent straight to your inbox in our newsletter.
+        </p>
         <h3>FORM GOES HERE</h3>
-    
+
         <h2>Get In Touch</h2>
-        <p>Contact us to get involved in the Bioregioning Clyde projects 
-            or 
-            if you have ideas for new ones, we would love to hear from you
-            .
+        <p>
+          Contact us to get involved in the Bioregioning Clyde projects or if
+          you have ideas for new ones, we would love to hear from you .
         </p>
         <a href="#">CONTACT US</a>
-    </div>
+      </div>
     </footer>
     <!-- FOOTER ENDS -->
     <!-- Below Footer -->
-    <div class = "important_info">
-    <a href="#">PRIVACY POLICY</a>
-    <a href="#">TERMS & CONDITIONS</a>
-    <a href="#">Bioregioning Clyde © 2020</a>
-    <a href="#">Developed By M2 Web Solutions</a>
+    <div class="important_info">
+      <a href="#">PRIVACY POLICY</a>
+      <a href="#">TERMS & CONDITIONS</a>
+      <a href="#">Bioregioning Clyde © 2020</a>
+      <a href="#">Developed By M2 Web Solutions</a>
     </div>
-<script src="/app.js"></script>
-</body>
+    <script src="/js/app.js"></script>
+  </body>
 </html>
