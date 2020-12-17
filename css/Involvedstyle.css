@@ -666,13 +666,11 @@ ul{
 }
 
 .footer-col .bio {
-  color: #bbbbbb;
-  font-size: 1.1rem;
-  width: 100%;
+  display: none;
 }
 
 .bio-col {
-  padding: 0 4rem;
+  padding-left: 3rem;
   width: 100%;
 }
 }
