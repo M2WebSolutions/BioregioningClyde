@@ -1,240 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bioregioning Clyde</title>
     <link rel="icon" href="/imgs/Clyde Bio Logo - Black White Stroke.png" />
     <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/glide.core.min.css">
-    <link rel="stylesheet" href="/css/glide.theme.min.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/glide.core.min.css" />
+    <link rel="stylesheet" href="/css/glide.theme.min.css" />
+  </head>
+  <body>
     <!-- NavBar -->
 
     <header class="main-header">
-        <div class="logo">   
-            <a href="index.html">
-                <img src="/imgs/Clyde Bio Logo Full Colour.png" alt="Bioregioning Clyde"
-                  onclick="document.location.href = '/index.html';" />
-              </a>
-        </div>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="/imgs/Clyde Bio Logo Full Colour.png"
+            alt="Bioregioning Clyde"
+            onclick="document.location.href = '/index.html';"
+          />
+        </a>
+      </div>
 
-        <input type="checkbox" class="menu-btn" id="menu-btn">
-        <label for="menu-btn" class="menu-icon">
-            <span class="menu-icon__line"></span>
-        </label>
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="menu-icon__line"></span>
+      </label>
 
-        <ul class="nav-links">
-            <li class="nav-link">
-                <a href="/about.html">About</a>
-            </li>
-            <li class="nav-link">
-                <a href="/projects.html">Projects</a>
-            </li>
-            <li class="nav-link">
-                <a href="/inspired.html">Get Inspired</a>
-            </li>
-            <li class="nav-link">
-                <a href="/involved.html">Get Involved</a>
-            </li>
-            <!-- <li class="nav-link">
+      <ul class="nav-links">
+        <li class="nav-link homeLink">
+          <p class="current_page" href="/index.html">Home</p>
+        </li>
+        <li class="nav-link">
+          <a href="/about.html">About</a>
+        </li>
+        <li class="nav-link">
+          <a href="/projects.html">Projects</a>
+        </li>
+        <li class="nav-link">
+          <a href="/inspired.html">Get Inspired</a>
+        </li>
+        <li class="nav-link">
+          <a href="/involved.html">Get Involved</a>
+        </li>
+        <!-- <li class="nav-link">
                 <a href="/news.html">News & Events</a>
             </li> -->
-            <li class="nav-link">
-                <a href="/contact.html">Contact</a>
-            </li>
-        </ul>
+        <li class="nav-link">
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
     </header>
-<!-- Main Content -->   
-<!-- CAROUSEL -->
-<div class="carousel">
-    <div class = "title">
-        <h1>Bioregioning Clyde<br><span>Officially Most Gallus Bioregion On Planet Earth</span></h1>
-    </div>
-    <div class="glide">
+    <!-- Main Content -->
+    <!-- CAROUSEL -->
+    <div class="carousel">
+      <div class="title">
+        <h1>
+          Bioregioning Clyde<br /><span
+            >Officially Most Gallus Bioregion On Planet Earth</span
+          >
+        </h1>
+      </div>
+      <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
-            <li class="glide__slide"><img src="/imgs/P7250193.JPG" alt=""></li>
-            <li class="glide__slide"><img src="/imgs/Clyde Tributary 1.jpg" alt=""></li>
-            <li class="glide__slide"><img src="/imgs/Clyde Estuary.JPG" alt=""></li>
-            <li class="glide__slide"><img src="/imgs/Mausoleum.JPG" alt=""></li>
+            <li class="glide__slide">
+              <img src="/imgs/P7250193.JPG" alt="" />
+            </li>
+            <li class="glide__slide">
+              <img src="/imgs/Clyde Tributary 1.jpg" alt="" />
+            </li>
+            <li class="glide__slide">
+              <img src="/imgs/Clyde Estuary.JPG" alt="" />
+            </li>
+            <li class="glide__slide">
+              <img src="/imgs/Mausoleum.JPG" alt="" />
+            </li>
           </ul>
         </div>
-     
+
         <div class="glide__arrows" id="arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-          </div>
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            prev
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            next
+          </button>
+        </div>
 
-          <div class="glide__bullets" id="dots" data-glide-el="controls[nav]">
-            <button class="glide__bullet" data-glide-dir="=0"></button>
-            <button class="glide__bullet" data-glide-dir="=1"></button>
-            <button class="glide__bullet" data-glide-dir="=2"></button>
-            <button class="glide__bullet" data-glide-dir="=3"></button>
-          </div>  
-    </div>
-</div>
-
-<!-- CAROUSEL ENDS -->
-
-<!-- QUOTE -->
-<div class = "quote vignette">
-    <h2>
-        Bioregioning is taking the time 
-to understand
-why the world is the way it is today,
-<br>&<br>
-to care for all those 
-who live in the places we live.
-
-    </h2>
-
-    <h4>With some of the most striking landscapes in Scotland, and its most Gallus City, the Clyde Bioregion, is like nowhere else in the world.</h4>
-
-    <br>
-    <br>
-    <br>
-
-    <div class="btn">
-        <a href="/about.html" class="underline">Find Out More <i class="fas fa-arrow-right"></i></a>
+        <div class="glide__bullets" id="dots" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+          <button class="glide__bullet" data-glide-dir="=3"></button>
+        </div>
+      </div>
     </div>
 
-</div>
-<!-- QUOTE ENDS -->
+    <!-- CAROUSEL ENDS -->
 
-<!-- MAIN INFO -->
-<div class = "main_info">
+    <!-- QUOTE -->
+    <div class="quote vignette">
+      <h2>
+        Bioregioning is taking the time to understand why the world is the way
+        it is today,
+        <br />&<br />
+        to care for all those who live in the places we live.
+      </h2>
 
-<div class="container">
-    <div class = "container_first_half">
-        <h4>
-            Mapping & Understanding the Natural & Cultural Systems of the Clyde Bioregion
-        </h4>
-        <p>
-            Comprising the greatest density of population in Scotland, there have been huge generational social and economic problems, and with climate change all its communities currently face future environmental challenges.
-        </p>
-</div>
-    <div class = "container_second_half"></div>
-</div> 
+      <h4>
+        With some of the most striking landscapes in Scotland, and its most
+        Gallus City, the Clyde Bioregion, is like nowhere else in the world.
+      </h4>
 
+      <br />
+      <br />
+      <br />
 
-<div class="container">
-    
-    <div class = "container_second_half"></div>
-
-    <div class = "container_first_half">
-    <h4>
-            Revealing the Problems and Challenges
-    </h4>
-        <p>
-            But there are individuals and organisations who have already been working to make changes, find solutions & develop regenerative cultures.
-        </p>
+      <div class="btn">
+        <a href="/about.html" class="underline"
+          >Find Out More <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
     </div>
-</div> 
+    <!-- QUOTE ENDS -->
 
-<div class="container">
-    <div class = "container_first_half">
-    <h4>
-            Identifying How and Where Communities Support Restoration, Regeneration & Reimagination of Life Ways in the Bioregion
-    </h4>
-        <p>
-            We are all part of different scales of community, from family, town to nation, we have more than one identity, more than one place, the Clyde Bioregion is your place too.
-        </p>
-</div>
-    <div class = "container_second_half"></div>
-</div> 
+    <!-- MAIN INFO -->
+    <div class="main_info">
+      <div class="container">
+        <div class="container_first_half">
+          <h4>
+            Mapping & Understanding the Natural & Cultural Systems of the Clyde
+            Bioregion
+          </h4>
+          <p>
+            Comprising the greatest density of population in Scotland, there
+            have been huge generational social and economic problems, and with
+            climate change all its communities currently face future
+            environmental challenges.
+          </p>
+        </div>
+        <div class="container_second_half"></div>
+      </div>
 
-<div class="container">
-    
-    <div class = "container_second_half"></div>
+      <div class="container">
+        <div class="container_second_half"></div>
 
-    <div class = "container_first_half">
-    <h4>
-            Supporting and Collaborating to Care, Build, Nurture, Grow Communities of the Clyde Bioregion
-    </h4>
-        <p>
-            Bioregioning Clyde gets to the ‘heart of the matter’
-to help address conditions that make life challenging
-to explore ways of thinking and mobilising to facilitate solution
-        </p>
+        <div class="container_first_half">
+          <h4>Revealing the Problems and Challenges</h4>
+          <p>
+            But there are individuals and organisations who have already been
+            working to make changes, find solutions & develop regenerative
+            cultures.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container_first_half">
+          <h4>
+            Identifying How and Where Communities Support Restoration,
+            Regeneration & Reimagination of Life Ways in the Bioregion
+          </h4>
+          <p>
+            We are all part of different scales of community, from family, town
+            to nation, we have more than one identity, more than one place, the
+            Clyde Bioregion is your place too.
+          </p>
+        </div>
+        <div class="container_second_half"></div>
+      </div>
+
+      <div class="container">
+        <div class="container_second_half"></div>
+
+        <div class="container_first_half">
+          <h4>
+            Supporting and Collaborating to Care, Build, Nurture, Grow
+            Communities of the Clyde Bioregion
+          </h4>
+          <p>
+            Bioregioning Clyde gets to the ‘heart of the matter’ to help address
+            conditions that make life challenging to explore ways of thinking
+            and mobilising to facilitate solution
+          </p>
+        </div>
+      </div>
     </div>
-</div> 
-</div>
-<!-- MAIN INFO ENDS -->
+    <!-- MAIN INFO ENDS -->
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
+    <!-- FOOTER ENDS -->
 
-<!-- FOOTER ENDS -->
+    <footer class="grid3">
+      <div>
+        <h2>BIOREGIONING CLYDE</h2>
+        <p>
+          Bioregioning is taking the time to understand why the world is the way
+          it is today, & to care for all those who live in the places we live.
+          With some of the most striking landscapes in Scotland, and its most
+          Gallus City, the Clyde Bioregion, is like nowhere else in the world.
+        </p>
+      </div>
+      <div>
+        <h2>Sitemap</h2>
+        <ul>
+          <li>> About</li>
+          <li>> Vision & Mission</li>
+          <li>> What is Bioregion?</li>
+          <li>> What is Bioregioning?</li>
+          <li>> Contact</li>
+          <li>> Projects</li>
+          <li>> Get Inspired</li>
+          <li>> Global Bioregioning</li>
+          <li>> Clyde Bioregioning</li>
+          <li>> Get Involved</li>
+          <li>> News & Events</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Subscribe</h2>
+        <p>
+          Get to know all about Bioregioning Clyde by getting all of our updates
+          and news sent straight to your inbox in our newsletter.
+        </p>
+        <h3>FORM GOES HERE</h3>
 
-<footer class = "grid3">
-<div>
-    <h2>BIOREGIONING CLYDE</h2>
-    <p>Bioregioning is taking the time 
-        to understand
-         why the world is the way it is today, & to care for all those
-         who live in the places we live.
-        With some of the most striking landscapes in Scotland, and its most Gallus City, the Clyde Bioregion, is like nowhere else in the world.</p>
-</div>
-<div>
-    <h2>Sitemap</h2>
-    <ul>
-        <li>> About</li>
-        <li>> Vision & Mission</li>
-        <li>> What is Bioregion?</li>
-        <li>> What is Bioregioning?</li>
-        <li>> Contact</li>
-        <li>> Projects</li>
-        <li>> Get Inspired</li>
-        <li>> Global Bioregioning</li>
-        <li>> Clyde Bioregioning</li>
-        <li>> Get Involved</li>
-        <li>> News & Events</li>
-    </ul>
-</div>
-<div>
-    <h2>Subscribe</h2>
-    <p>Get to know all about Bioregioning Clyde by getting all of our updates and news sent straight to your inbox in our newsletter.</p>
-    <h3>FORM GOES HERE</h3>
+        <h2>Get In Touch</h2>
+        <p>
+          Contact us to get involved in the Bioregioning Clyde projects or if
+          you have ideas for new ones, we would love to hear from you .
+        </p>
+        <a href="#">CONTACT US</a>
+      </div>
+    </footer>
 
-    <h2>Get In Touch</h2>
-    <p>Contact us to get involved in the Bioregioning Clyde projects 
-        or 
-        if you have ideas for new ones, we would love to hear from you
-        .
-    </p>
-    <a href="#">CONTACT US</a>
-</div>
-</footer>
+    <!-- Below Footer -->
+    <div class="important_info">
+      <a href="#">PRIVACY POLICY</a>
+      <a href="#">TERMS & CONDITIONS</a>
+      <a>Bioregioning Clyde © 2020</a>
+      <br />
+      <a href="#">Developed By M2 Web Solutions</a>
+    </div>
 
-<!-- Below Footer -->
-<div class = "important_info">
-<a href="#">PRIVACY POLICY</a>
-<a href="#">TERMS & CONDITIONS</a>
-<a>Bioregioning Clyde © 2020</a>
-<br>
-<a href="#">Developed By M2 Web Solutions</a>
-</div>
+    <!-- SCRIPTS -->
 
-<!-- SCRIPTS -->
+    <script src="/js/app.js"></script>
+    <script src="/js/disableUI.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
-<script src="/js/app.js"></script>
-<script src="/js/disableUI.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-
-<script>
-  new Glide('.glide',{
-// OPTIONS GO HERE
-    type: 'carousel',
-    autoplay: 5000,
-    gap: 0
-  }).mount()
-</script>
-
-</body>
+    <script>
+      new Glide(".glide", {
+        // OPTIONS GO HERE
+        type: "carousel",
+        autoplay: 5000,
+        gap: 0,
+      }).mount();
+    </script>
+  </body>
 </html>
