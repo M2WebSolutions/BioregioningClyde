@@ -23,15 +23,16 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
+  height: 100%;
   margin: 0;
-  padding: 0;
+  font-size: 16px;
   font-family: "Raleway", sans-serif;
-  width: 100%;
-  overflow-x: hidden;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
 }
-
-/* DYNAMIC CLASSES */
 
 /* This adds and removes depending on screen size, shown on mobile menu */
 @media screen and (min-width: 1450px) {
@@ -44,7 +45,7 @@ body {
   color: rgb(130, 197, 53);
   font-size: 0.9rem;
   margin: 0.2rem;
-  margin-top: .1rem;
+  margin-top: 0.1rem;
   padding: 0 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -65,73 +66,151 @@ body {
   }
 }
 
-/* CONTAINTERS */
 
-/* FLEX CONTAINER */
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: auto;
-}
-
-@media (max-width: 1024px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
-.contact-container {
-  min-height: 100vh;
-  /* background: rgb(78, 137, 207); */
-  background: linear-gradient(
-    180deg,
-    rgba(78, 137, 207, .55) 0%,
-    rgba(46, 148, 166, 0.25) 100%
-  ), url('/imgs/Clyde\ Estuary.JPG');
-  
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5 {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-repeat: no-repeat;
+  /* fixed for parallax, scroll for normal*/
+  background-attachment: fixed;
 }
 
-.contact-form-container {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.13);
-  backdrop-filter: blur(7.5px);
-  -webkit-backdrop-filter: blur(7.5px);
-  border-radius: 10px;
-  width: 70vw;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 65px;
+.pimg1 {
+  background-image: url(/imgs/Clyde\ _\ Tinto.jpg);
+  min-height: 40vh;
+  background-position:top;
+  background-size: contain;
+  filter: brightness(85%);
 }
 
-/* GRID */
+.pimg2 {
+  background-image: url(/imgs/Mausoleum.JPG);
+  min-height: 25vh;
+}
 
-/*============== 3 COLUMN GRID ================*/
-.grid3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0 20px;
-  column-gap: 20px;
+.pimg3 {
+  background-image: url(/imgs/P7250193.JPG);
+  min-height: 25vh;
+}
+
+.pimg4 {
+  background-image: url(/imgs/IMG_20171229_121507-01.jpg);
+  min-height: 25vh;
+}
+
+.pimg5 {
+  background-image: url(/imgs/20151207_132319.jpg);
+  min-height: 25vh;
+}
+
+.section {
   text-align: center;
+  padding: 3rem 5rem;
+  font-size: 1.8rem;
 }
 
-@media (max-width: 1000px) {
-  .grid3 {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-  }
+.intro {
+    font-size: 1.5rem;
 }
-/* =========================================== */
+
+.section-light {
+  background-color: #f4f4f4;
+  color: rgb(41, 41, 41);
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.quote-section {
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.4) inset;
+  color: #4d4d4d;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.ptext span {
+    color: #000;
+    font-weight: 500;
+}
+
+.section h2 {
+  font-family: "Oxygen", sans-serif;
+}
+
+.ptext {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 114, 135, 0.158);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 1.2rem;
+}
+
+.ptext-header {
+    position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ptext-header .border {
+    background-color: rgb(108, 165, 43);
+    color: rgb(240, 240, 240);
+    padding: 2rem;
+}
+
+.contact-section h1 {
+    font-size: 1.5rem;
+}
+
+.contact-section h1 a {
+    text-decoration: none;
+    color: #5094e2;
+}
+
+.contact-section h2 {
+    font-size: 1.8rem;
+}
+
+/* Find Out More Button */
+.btn {
+  display: inline-block;
+}
+
+.btn a {
+  text-decoration: none;
+  font-family: "Oxygen";
+  color: #ddd;
+  opacity: 0.8;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn a i {
+  color: #ddd;
+  opacity: 0.9;
+}
 
 /* Nav Bar */
 .main-header {
@@ -232,6 +311,13 @@ body {
 
   .main-header .logo img {
     max-width: 15rem;
+    margin-top: 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-header .logo img {
+    max-width: 50vw;
     margin-top: 0.4rem;
   }
 }
@@ -441,259 +527,86 @@ body {
   }
 }
 
-/* MAIN */
+/*Hero Carousel*/
 
-.contact_header {
-  padding-top: 2.5rem;
+.carousel {
+  padding-top: 2rem;
+  text-align: center;
+  max-height: 100vh;
+  height: 85vh;
+  margin-bottom: -15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.contact_header img {
+.carousel .glide__slide {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-height: 480px) {
+  .carousel .glide__slide {
+    height: 100%;
+  }
+}
+
+.carousel img {
   width: 100%;
-  height: 50vh;
-  position: relative;
   object-fit: cover;
-  filter: brightness(25%);
+  height: 100vh;
+  position: relative;
+  filter: brightness(75%);
+  margin-bottom: -2.5rem;
 }
 
-.contact_header h1 {
-  max-width: 100%;
-  position: absolute;
+@media screen and (max-width: 1024px) {
+  .carousel img {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    position: relative;
+    filter: brightness(75%);
+    margin-bottom: -2.5rem;
+  }
+}
+
+.carousel .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  z-index: 1;
-  top: 25%;
+  position: absolute;
   margin: auto;
   color: white;
-  text-align: center;
-  justify-content: center;
   padding: 1rem;
+  z-index: 1;
 }
 
-/* FORM */
-
-form {
-  margin: auto;
+.carousel .title h1 {
   text-align: center;
+  font-size: calc(3vw + 3vh + 1.5vmin);
+  text-shadow: 4px 4px 10px #1a1a1a;
 }
 
-.contact_form {
-  width: 80%;
-}
-
-.form_group {
-  display: flex;
-  align-items: left;
-}
-
-.form_group {
-  width: 100%;
-  position: relative;
-}
-
-input:focus,
-input:active,
-textarea:focus,
-textarea:active {
-  outline: none;
-}
-
-textarea {
-  resize: none;
-}
-
-.form_group input,
-.form_group textarea {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: none;
-  font-size: 1.5rem;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
-  background: none;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  color: #fff;
-}
-
-.form_group label {
-  position: absolute;
-  pointer-events: none;
-  font-size: 1.1rem;
-  font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  opacity: .8;
-}
-
-.center {
+.carousel .title h1 span {
   text-align: center;
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 
-.contact-form-container h1 {
-  font-size: 2.5rem;
-  color: #fff;
-}
-
-.contact-form-container h2 {
-  font-size: 1.5rem;
-  padding: 1rem 5rem;
-}
-
-.contact-form-container h2 a {
-  text-decoration: underline;
-  color: #073052;
-}
-
-.contact-form-container h3 {
-  font-size: 1.2rem;
-  padding: 1rem 5rem;
-  opacity: 0.8;
-}
-
-.wrapper .button {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  float: left;
-  margin: 0 5px;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-out;
-}
-
-.wrapper .button .icon {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50px;
-  box-sizing: border-box;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-
-.wrapper .button .icon i {
-  font-size: 25px;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-
-@media screen and (min-width: 1025px) {
-  .wrapper .button:hover {
-    width: 200px;
-  }
-
-  .wrapper .button:nth-child(1):hover .icon {
-    background: #4267b2;
-  }
-  .wrapper .button:nth-child(2):hover .icon {
-    background: #1da1f2;
-  }
-  .wrapper .button:nth-child(3):hover .icon {
-    background: #e1306c;
-  }
-  .wrapper .button:nth-child(4):hover .icon {
-    background: #ff0000;
-  }
-
-  .wrapper .button:hover .icon i {
-    color: #fff;
-  }
-  .wrapper .button span {
-    font-family: "Oxygen", sans-serif;
-    font-size: 1.35rem;
-    font-weight: bold;
-    line-height: 60px;
-    margin-left: 10px;
-    transition: all 0.3s ease-out;
-  }
-  .wrapper .button:nth-child(1) span {
-    color: #4267b2;
-  }
-  .wrapper .button:nth-child(2) span {
-    color: #1da1f2;
-  }
-  .wrapper .button:nth-child(3) span {
-    color: #e1306c;
-  }
-  .wrapper .button:nth-child(4) span {
-    color: #ff0000;
+@media (max-width: 1020px) {
+  .glide__arrows {
+    display: none;
   }
 }
 
-.button_submit {
-  margin: 15px 0;
-  width: 100%;
-  height: 50px;
-  font-size: 18px;
-  line-height: 50px;
-  font-weight: 600;
-  background: #dde1e7;
-  border-radius: 25px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: #272727;
-}
-.button_submit:focus {
-  color: #06446d;
-  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #c0c0c073;
-}
-
-@media screen and (max-width: 1024px) {
-  .main-header .logo img {
-    max-width: 50vw;
-    margin-top: 0.4rem;
-  }
-
-  .contact-container {
-    height: 100%;
-  }
-
-  .contact-form-container {
-    min-width: 90vw;
-    height: 100%;
-    margin: 5rem;
-  }
-
-  .contact-form-container h1 {
-    font-size: 2rem;
-    color: #fff;
-    margin-top: 2rem;
-    margin-bottom: -0.8rem;
-  }
-
-  .contact-form-container h2 {
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-  }
-
-  .contact-form-container h2 a {
-    text-decoration: underline;
-    color: #1553ff;
-  }
-
-  .contact-form-container h3 {
-    font-size: 1rem;
-    padding: 2rem 2rem;
-    opacity: 0.8;
-  }
-
-  .wrapper {
-    padding-top: 2rem;
-  }
-}
-
-/* Footer */
+/* Footer Styles */
 
 .footer-container {
   max-width: 90vw;
   margin: auto;
+  background-attachment: fixed;
 }
 .row {
   display: flex;
