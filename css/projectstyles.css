@@ -694,6 +694,12 @@ button:focus {
   }
 }
 
+  /* This adds and removes the buttons and bullets for 
+  the carousel on nav open */
+  .visible{
+    display: none !important;
+  }
+
 .card.current--card {
   --current-card-rotation-offset: 0;
   --card-translateX-offset: 0;
