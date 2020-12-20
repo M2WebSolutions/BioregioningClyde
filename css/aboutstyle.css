@@ -110,9 +110,22 @@ html {
 }
 
 .section {
-  text-align: center;
+  text-align: left;
   padding: 3rem 5rem;
   font-size: 1.8rem;
+}
+
+@media(max-width:1024px){
+  .section p{
+    margin: 0rem -3rem;
+    font-size: 1rem;
+  }
+
+}
+
+.section span{
+  font-style: italic;
+  color: grey;
 }
 
 .intro {
@@ -140,9 +153,13 @@ html {
   width: 100%;
   text-align: center;
   color: #000;
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 114, 135, 0.158);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .ptext span {
@@ -150,20 +167,29 @@ html {
     font-weight: 500;
 }
 
+/* .ptext-header span{
+  font-size: 2rem
+} */
+
 .section h2 {
+  text-align: center;
   font-family: "Oxygen", sans-serif;
 }
 
-.ptext {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 114, 135, 0.158);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  padding: 1.2rem;
+@media(max-width:1024px){
+  .section h2 {
+    margin: 3rem -4rem;
+  }
+
+  .section a{
+    font-size: 1rem;
+  }
 }
 
+
+
 .ptext-header {
-    position: absolute;
+  position: absolute;
   top: 50%;
   width: 100%;
   text-align: center;
@@ -174,11 +200,26 @@ html {
   font-weight: bold;
 }
 
+
+@media(max-width: 1024px){
+  .ptext-header {
+  font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 480px){
+  .ptext-header {
+  font-size: 1rem;
+  }
+}
+
+
 .ptext-header .border {
     background-color: rgb(108, 165, 43);
     color: rgb(240, 240, 240);
-    padding: 2rem;
+   
 }
+
 
 .contact-section h1 {
     font-size: 1.5rem;
