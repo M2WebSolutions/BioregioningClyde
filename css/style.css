@@ -514,7 +514,7 @@
   }
 
   .carousel  p {
-    animation: bounce 1.5s ease infinite;
+    animation: bounce 3s ease infinite;
     content: "scroll to learn more";
     width: 100%;
     position: absolute;
