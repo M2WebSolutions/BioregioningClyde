@@ -540,31 +540,92 @@ body {
 }
 
 /* CONTACT FORM */
-.contact_us_link {
-  text-align: center;
-  margin: 5rem;
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
 }
 
-.contact_us_link h3 {
-  margin-bottom: 3rem;
+.contact-section h1 {
+  font-size: 1.5rem;
 }
 
-.contact_us_link a {
-  background: #1f426b;
-  padding: 1rem;
-  border-radius: 5px;
+.contact-section {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.contact-section h1 a {
   text-decoration: none;
-  color: white;
-  transition: 0.5s;
+  color: #5094e2;
 }
 
-.contact_us_link a:hover {
-  background: lightblue;
-  padding: 1rem;
-  border-radius: 5px;
+.contact-section h2 {
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1450px) {
+.contact-section h1 {
+  font-size: 1rem;
+}
+
+.contact-section {
+padding: 1.5rem 6rem;
+}
+
+.contact-section h1 a {
   text-decoration: none;
-  color: grey;
-  transition: 0.5s;
+  color: #5094e2;
+}
+
+.contact-section h2 {
+  font-size: 1.2rem;
+}
+
+.btn {
+padding-top: 2rem;
+}
+}
+
+.center {
+text-align: center;
+}
+
+/* Find Out More Button */
+.btn {
+display: inline-block;
+}
+
+.btn a {
+text-decoration: none;
+font-family: "Oxygen";
+color: #ddd;
+opacity: 0.8;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.btn a i {
+color: #ddd;
+opacity: 0.9;
+}
+
+.btn a:after {   
+content: '';
+display: block;
+height: 4px;
+left: 50%;
+background:rgb(130, 197, 53);
+transition: width 0.3s ease 0s, left 0.3s ease 0s;
+width: 0;
+margin-top: .5rem;
+}
+
+.btn a:hover:after { 
+width: 100%; 
+margin-top: .5rem;
+left: 0; 
+background: rgb(130, 197, 53);
 }
 
 /* Footer */
