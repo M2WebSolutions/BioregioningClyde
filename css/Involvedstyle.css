@@ -662,7 +662,7 @@ ul{
 	background-color: #ffffff;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1024px) {
   .row {
     flex-direction: column;
     align-content: center;
