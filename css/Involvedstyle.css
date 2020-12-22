@@ -545,6 +545,20 @@ body {
   color: #ddd;
 }
 
+.section {
+  text-align: left;
+  padding: 3rem 5rem;
+  font-size: 1.8rem;
+}
+
+@media(max-width:1024px){
+  .section p{
+    margin: 0rem -3rem;
+    font-size: 1rem;
+  }
+
+}
+
 .contact-section h1 {
   font-size: 1.5rem;
 }
