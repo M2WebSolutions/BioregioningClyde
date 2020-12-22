@@ -472,7 +472,7 @@
     object-fit: cover;
     height: 65vh; 
     position: relative;
-    filter: brightness(25%);
+    filter: brightness(40%);
     margin-bottom: -2.5rem;
   }
 
