@@ -158,6 +158,45 @@ form.sign-in-form {
   font-weight: 500;
 }
 
+.footer-col .input-field {
+  height: 35px;
+  border-radius: 0px;
+  display: flex;
+}
+
+.footer-col .input-field i {
+  line-height: 35px;
+  color: #7c7c7c;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer-col .input-field input {
+  
+}
+
+.footer-col .input-field input::placeholder {
+  color: #7c7c7c;
+}
+
+.footer-col .input-field .nletterBtn {
+  background-color: #5995fd;
+  padding: 0 5%;
+  color: #fff;
+}
+
+.footer-col .input-field a {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 35px;
+}
+
+.footer-col .input-field input[type="submit"] {
+  color: #fff;
+  font-weight: 300;
+}
+
 .social-text {
   padding: 0.7rem 0;
   font-size: 1rem;
@@ -992,6 +1031,10 @@ ul {
 .footer-col {
   width: 25%;
   padding: 0 15px;
+}
+
+.footer-col p {
+  color: #fff;
 }
 
 .footer-col img {

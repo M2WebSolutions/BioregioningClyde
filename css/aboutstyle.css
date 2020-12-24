@@ -830,3 +830,82 @@ ul {
     width: 100%;
   }
 }
+
+.footer-col .input-field {
+  height: 35px;
+  border-radius: 0px;
+  display: flex;
+}
+
+.footer-col .input-field i {
+  line-height: 35px;
+  color: #7c7c7c;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer-col .input-field input {
+  
+}
+
+.footer-col .input-field input::placeholder {
+  color: #7c7c7c;
+}
+
+.footer-col .input-field .nletterBtn {
+  background-color: #5995fd;
+  padding: 0 5%;
+  color: #fff;
+}
+
+.footer-col .input-field a {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 35px;
+}
+
+.footer-col .input-field input[type="submit"] {
+  color: #fff;
+  font-weight: 300;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.footer-col p {
+  color: #fff;
+}
