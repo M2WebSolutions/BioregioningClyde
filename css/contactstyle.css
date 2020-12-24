@@ -691,6 +691,82 @@ form.sign-in-form {
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .forms-container {
+    margin-top: 4vh !important;
+  }
+
+  .sign-in-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .sign-in-form h3 {
+    font-size: .9rem;
+    text-align: center;
+  }
+
+  .sign-in-form h4 {
+      text-align: center;
+      margin-bottom: -10px;
+  }
+
+  .input-field {
+      height: 35px;
+  }
+
+  .input-field i {
+      line-height: 35px;
+      font-size: .9rem;
+  }
+
+  .btn {
+    width: 25vw;
+    height: 35px;
+  }
+
+  .social-media {
+      padding-top: 15px;
+  }
+}
+
+@media screen and (max-height: 836px) and (min-width: 1360px) {
+  .forms-container {
+    margin-top: 4vh !important;
+  }
+
+  .sign-in-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .sign-in-form h3 {
+    font-size: .9rem;
+    text-align: center;
+  }
+
+  .sign-in-form h4 {
+      text-align: center;
+      margin-bottom: -10px;
+  }
+
+  .input-field {
+      height: 35px;
+  }
+
+  .input-field i {
+      line-height: 35px;
+      font-size: .9rem;
+  }
+
+  .btn {
+    width: 25vw;
+    height: 35px;
+  }
+
+  .social-media {
+      padding-top: 15px;
+  }
+}
+
 .nav-links .nav-link a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
