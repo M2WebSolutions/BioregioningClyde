@@ -566,8 +566,6 @@ ul {
   padding-right: 5%;
 }
 
-.footer-col .input-field input {
-}
 
 .footer-col .input-field input::placeholder {
   color: #7c7c7c;
@@ -629,4 +627,26 @@ ul {
 
 .footer-col p {
   color: #fff;
+}
+
+@media(max-width:480px){
+
+
+  .footer-col .input-field{
+    display: block;
+    height: 3rem;
+    padding: 0;
+  }
+
+  .footer-col .input-field a {
+    display:block;
+  }
+}
+@media(max-width:359px){
+  .footer-col .input-field{
+    display: block;
+    height: 6rem;
+    padding: 0;
+  }
+
 }
