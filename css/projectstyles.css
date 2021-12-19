@@ -129,8 +129,8 @@ ul {
 }
 
 .footer-col img {
-  padding-top: 1.5rem;
   max-width: 15vw;
+  border-radius: 5%;
 }
 
 .footer-col .bio {
@@ -251,10 +251,22 @@ ul {
   color: inherit;
   text-transform: uppercase;
 }
+/* .main-header .logo {
+  display: flex;
+  flex-direction: row;
+} */
+.main-header .logo a {
+  display: flex;
+  flex-direction: row;
+}
 
 .main-header .logo img {
-  max-width: 18rem;
-  margin-top: 0.4rem;
+  max-width: 3rem;
+  margin: auto;
+  border-radius: 10%;
+}
+.main-header .logo h2 {
+  margin-left: 1rem;
 }
 
 .main-header .menu-icon {
@@ -325,17 +337,12 @@ ul {
   .nav-links .nav-link a {
     font-size: 0.75rem;
   }
-
-  .main-header .logo img {
-    max-width: 15rem;
-    margin-top: 0.4rem;
-  }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-screen: 768px) {
   .main-header .logo img {
-    max-width: 50vw;
-    margin-top: 0.4rem;
+    max-width: 10vw;
+    /* margin-top: 0.4rem; */
   }
 }
 
@@ -930,8 +937,6 @@ button:focus {
   padding-right: 5%;
 }
 
-
-
 .footer-col .input-field input::placeholder {
   color: #7c7c7c;
 }
@@ -994,24 +999,21 @@ button:focus {
   color: #fff;
 }
 
-@media(max-width:480px){
-
-
-  .footer-col .input-field{
+@media (max-width: 480px) {
+  .footer-col .input-field {
     display: block;
     height: 3rem;
     padding: 0;
   }
 
   .footer-col .input-field a {
-    display:block;
+    display: block;
   }
 }
-@media(max-width:359px){
-  .footer-col .input-field{
+@media (max-width: 359px) {
+  .footer-col .input-field {
     display: block;
     height: 6rem;
     padding: 0;
   }
-
 }

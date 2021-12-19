@@ -66,7 +66,6 @@ html {
   }
 }
 
-
 .pimg1,
 .pimg2,
 .pimg3,
@@ -85,7 +84,7 @@ html {
   padding-top: 65px;
   background-image: url(/imgs/Clyde\ _\ Tinto.jpg);
   min-height: 40vh;
-  background-position:top;
+  background-position: top;
   background-size: 200%;
   filter: brightness(85%);
   display: flex;
@@ -126,21 +125,20 @@ html {
   font-size: 1.8rem;
 }
 
-@media(max-width:1024px){
-  .section p{
+@media (max-width: 1024px) {
+  .section p {
     margin: 0rem -3rem;
     font-size: 1rem;
   }
-
 }
 
-.section span{
+.section span {
   font-style: italic;
   color: grey;
 }
 
 .intro {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .section-light {
@@ -174,8 +172,8 @@ html {
 }
 
 .ptext span {
-    color: #000;
-    font-weight: 500;
+  color: #000;
+  font-weight: 500;
 }
 
 /* .ptext-header span{
@@ -187,12 +185,12 @@ html {
   font-family: "Oxygen", sans-serif;
 }
 
-@media(max-width:1024px){
+@media (max-width: 1024px) {
   .section h2 {
     margin: 3rem -4rem;
   }
 
-  .section a{
+  .section a {
     font-size: 1rem;
   }
 }
@@ -213,20 +211,18 @@ html {
   padding: 3rem 1rem;
 }
 
-
-@media(max-width: 1024px){
+@media (max-width: 1024px) {
   .ptext-header {
-  font-size: 1.5rem;
-  padding: 1rem 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
   }
 }
 
-@media(max-width: 480px){
+@media (max-width: 480px) {
   .ptext-header {
-  font-size: 1rem;
+    font-size: 1rem;
   }
 }
-
 
 /* .ptext-header .border {
     background-color: rgb(108, 165, 43);
@@ -234,9 +230,8 @@ html {
     padding: 1rem 2rem;
 } */
 
-
 .contact-section h1 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .contact-section {
@@ -246,35 +241,35 @@ html {
 }
 
 .contact-section h1 a {
-    text-decoration: none;
-    color: #5094e2;
+  text-decoration: none;
+  color: #5094e2;
 }
 
 .contact-section h2 {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: 1450px) {
   .contact-section h1 {
     font-size: 1rem;
-}
+  }
 
-.contact-section {
-  padding: 1.5rem 6rem;
-}
+  .contact-section {
+    padding: 1.5rem 6rem;
+  }
 
-.contact-section h1 a {
+  .contact-section h1 a {
     text-decoration: none;
     color: #5094e2;
-}
+  }
 
-.contact-section h2 {
+  .contact-section h2 {
     font-size: 1.2rem;
-}
+  }
 
-.btn {
-  padding-top: 2rem;
-}
+  .btn {
+    padding-top: 2rem;
+  }
 }
 
 .center {
@@ -300,21 +295,21 @@ html {
   opacity: 0.9;
 }
 
-.btn a:after {   
-  content: '';
+.btn a:after {
+  content: "";
   display: block;
   height: 4px;
   left: 50%;
-  background:rgb(130, 197, 53);
+  background: rgb(130, 197, 53);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
-.btn a:hover:after { 
-  width: 100%; 
-  margin-top: .5rem;
-  left: 0; 
+.btn a:hover:after {
+  width: 100%;
+  margin-top: 0.5rem;
+  left: 0;
   background: rgb(130, 197, 53);
 }
 
@@ -340,10 +335,22 @@ html {
   color: inherit;
   text-transform: uppercase;
 }
+/* .main-header .logo {
+  display: flex;
+  flex-direction: row;
+} */
+.main-header .logo a {
+  display: flex;
+  flex-direction: row;
+}
 
 .main-header .logo img {
-  max-width: 18rem;
-  margin-top: 0.4rem;
+  max-width: 3rem;
+  margin: auto;
+  border-radius: 10%;
+}
+.main-header .logo h2 {
+  margin-left: 1rem;
 }
 
 .main-header .menu-icon {
@@ -414,17 +421,12 @@ html {
   .nav-links .nav-link a {
     font-size: 0.75rem;
   }
-
-  .main-header .logo img {
-    max-width: 15rem;
-    margin-top: 0.4rem;
-  }
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) and (min-screen: 768px) {
   .main-header .logo img {
-    max-width: 50vw;
-    margin-top: 0.4rem;
+    max-width: 10vw;
+    /* margin-top: 0.4rem; */
   }
 }
 
@@ -731,8 +733,8 @@ ul {
 }
 
 .footer-col img {
-  padding-top: 1.5rem;
   max-width: 15vw;
+  border-radius: 5%;
 }
 
 .footer-col .bio {
@@ -906,24 +908,25 @@ ul {
   color: #fff;
 }
 
-@media(max-width:480px){
-
-
-  .footer-col .input-field{
+@media (max-width: 480px) {
+  .footer-col .input-field {
     display: block;
     height: 3rem;
     padding: 0;
   }
 
   .footer-col .input-field a {
-    display:block;
+    display: block;
   }
 }
-@media(max-width:359px){
-  .footer-col .input-field{
+@media (max-width: 359px) {
+  .footer-col .input-field {
     display: block;
     height: 6rem;
     padding: 0;
   }
+}
 
+.bolded {
+  font-weight: 800 !important;
 }
